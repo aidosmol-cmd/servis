@@ -7,10 +7,12 @@
     <meta name="description" content="Hunter Garage — сеть автосервисов в Казахстане. Замена масла, развал-схождение, диагностика, ремонт подвески и тормозов. Качество без переплат.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Saira:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="grain" aria-hidden="true"></div>
 
 <!-- HEADER -->
 <header class="header" id="header">
@@ -38,14 +40,16 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
-    <div class="hero__bg"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__grid"></div>
     <div class="container hero__content">
-        <div class="hero__logo-big">
-            <span class="logo__hunter logo__hunter--big">HUNTER</span>
-            <span class="logo__garage logo__garage--big">GARAGE</span>
-        </div>
+        <p class="kicker hero__kicker"><b>//</b> <span data-ru="Сеть автосервисов" data-kz="Автосервис желісі">Сеть автосервисов</span> — KZ · EST. 2024</p>
+        <h1 class="hero__logo-big">
+            <span class="logo__hunter--big">HUNTER</span>
+            <span class="logo__garage--big">GARAGE</span>
+        </h1>
         <p class="hero__slogan" data-ru="Качество без переплат" data-kz="Сапасы жоғары — бағасы қолжетімді">Качество без переплат</p>
-        <p class="hero__sub" data-ru="Сеть профессиональных автосервисов в Казахстане" data-kz="Қазақстандағы кәсіби автосервис желісі">Сеть профессиональных автосервисов в Казахстане</p>
+        <p class="hero__sub" data-ru="Сеть профессиональных автосервисов в Казахстане. Оборудование дилерского уровня — без переплат." data-kz="Қазақстандағы кәсіби автосервис желісі. Дилерлік деңгейдегі жабдық — артық төлемсіз.">Сеть профессиональных автосервисов в Казахстане. Оборудование дилерского уровня — без переплат.</p>
         <div class="hero__actions">
             <a href="#contact" class="btn btn--red" data-ru="Записаться на сервис" data-kz="Сервиске жазылу">Записаться на сервис</a>
             <a href="https://wa.me/77001234567" class="btn btn--outline" target="_blank" rel="noopener">WhatsApp</a>
@@ -56,14 +60,26 @@
     </div>
 </section>
 
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span>Замена масла</span><span>3D развал-схождение</span><span>Диагностика</span><span>Тормоза</span><span>Подвеска</span><span>Шиномонтаж</span><span>Фильтры</span><span>АКПП · МКПП</span>
+        <span>Замена масла</span><span>3D развал-схождение</span><span>Диагностика</span><span>Тормоза</span><span>Подвеска</span><span>Шиномонтаж</span><span>Фильтры</span><span>АКПП · МКПП</span>
+    </div>
+</div>
+
 <!-- SERVICES -->
-<section class="services" id="services">
+<section class="services section" id="services">
     <div class="container">
-        <h2 class="section-title" data-ru="Наши услуги" data-kz="Біздің қызметтер">Наши услуги</h2>
-        <p class="section-sub" data-ru="Полный спектр обслуживания вашего автомобиля" data-kz="Автокөлігіңізге толық техникалық қызмет көрсету">Полный спектр обслуживания вашего автомобиля</p>
+        <div class="sec-head sec-head--center">
+            <span class="sec-index">01 — SERVICES</span>
+            <h2 class="section-title" data-ru="Наши услуги" data-kz="Біздің қызметтер">Наши услуги</h2>
+            <p class="section-sub" data-ru="Полный спектр обслуживания вашего автомобиля" data-kz="Автокөлігіңізге толық техникалық қызмет көрсету">Полный спектр обслуживания вашего автомобиля</p>
+        </div>
         <div class="services__grid">
 
             <div class="service-card">
+                <span class="service-card__num">01</span>
                 <div class="service-card__icon">
                     <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l7 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 30c0-2 2-4 8-4s8 2 8 4" stroke="currentColor" stroke-width="2"/></svg>
                 </div>
@@ -72,6 +88,7 @@
             </div>
 
             <div class="service-card">
+                <span class="service-card__num">02</span>
                 <div class="service-card__icon">
                     <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="14" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 14v-4h12v4" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/></svg>
                 </div>
@@ -80,6 +97,7 @@
             </div>
 
             <div class="service-card">
+                <span class="service-card__num">03</span>
                 <div class="service-card__icon">
                     <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/><line x1="24" y1="10" x2="24" y2="16" stroke="currentColor" stroke-width="2"/><line x1="24" y1="32" x2="24" y2="38" stroke="currentColor" stroke-width="2"/><line x1="10" y1="24" x2="16" y2="24" stroke="currentColor" stroke-width="2"/><line x1="32" y1="24" x2="38" y2="24" stroke="currentColor" stroke-width="2"/></svg>
                 </div>
@@ -88,6 +106,7 @@
             </div>
 
             <div class="service-card">
+                <span class="service-card__num">04</span>
                 <div class="service-card__icon">
                     <svg viewBox="0 0 48 48" fill="none"><rect x="12" y="8" width="24" height="32" rx="2" stroke="currentColor" stroke-width="2"/><path d="M18 16h12M18 22h12M18 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="34" r="6" fill="#1a1a1a" stroke="currentColor" stroke-width="2"/><path d="M32 31v3l2 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
                 </div>
@@ -96,6 +115,7 @@
             </div>
 
             <div class="service-card">
+                <span class="service-card__num">05</span>
                 <div class="service-card__icon">
                     <svg viewBox="0 0 48 48" fill="none"><path d="M14 34V18a2 2 0 012-2h16a2 2 0 012 2v16" stroke="currentColor" stroke-width="2"/><path d="M10 34h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 24h8M24 20v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
                 </div>
@@ -104,6 +124,7 @@
             </div>
 
             <div class="service-card">
+                <span class="service-card__num">06</span>
                 <div class="service-card__icon">
                     <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/><path d="M24 16v-6M24 38v-6M16 24h-6M38 24h-6" stroke="currentColor" stroke-width="2"/></svg>
                 </div>
@@ -112,6 +133,7 @@
             </div>
 
             <div class="service-card">
+                <span class="service-card__num">07</span>
                 <div class="service-card__icon">
                     <svg viewBox="0 0 48 48" fill="none"><path d="M10 32c0-6 4-10 14-10s14 4 14 10" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="34" r="4" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="34" r="4" stroke="currentColor" stroke-width="2"/><path d="M20 22l2-8h4l2 8" stroke="currentColor" stroke-width="2"/></svg>
                 </div>
@@ -120,6 +142,7 @@
             </div>
 
             <div class="service-card">
+                <span class="service-card__num">08</span>
                 <div class="service-card__icon">
                     <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="9" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
                 </div>
@@ -132,11 +155,12 @@
 </section>
 
 <!-- ABOUT -->
-<section class="about" id="about">
+<section class="about section" id="about">
     <div class="container">
         <div class="about__grid">
             <div class="about__text">
-                <h2 class="section-title section-title--left" data-ru="Почему Hunter Garage?" data-kz="Неліктен Hunter Garage?">Почему Hunter Garage?</h2>
+                <span class="sec-index">02 — ABOUT</span>
+                <h2 class="section-title" data-ru="Почему Hunter Garage?" data-kz="Неліктен Hunter Garage?">Почему Hunter Garage?</h2>
                 <p class="about__desc" data-ru="Мы строим сеть автосервисов, где профессиональное обслуживание доступно каждому. Оборудование дилерского уровня, сертифицированные мастера и прозрачные цены — без компромиссов." data-kz="Біз кәсіби қызмет көрсету барлығына қолжетімді болатын автосервис желісін құрып жатырмыз. Дилерлік деңгейдегі жабдық, сертификатталған шеберлер және ашық бағалар — ымыраға келмей.">Мы строим сеть автосервисов, где профессиональное обслуживание доступно каждому. Оборудование дилерского уровня, сертифицированные мастера и прозрачные цены — без компромиссов.</p>
             </div>
             <div class="about__stats">
@@ -162,10 +186,13 @@
 </section>
 
 <!-- PRICES -->
-<section class="prices" id="prices">
+<section class="prices section" id="prices">
     <div class="container">
-        <h2 class="section-title" data-ru="Честные цены" data-kz="Адал бағалар">Честные цены</h2>
-        <p class="section-sub" data-ru="Без скрытых наценок и навязанных услуг" data-kz="Жасырын үстеме бағасыз және міндетті қызметтерсіз">Без скрытых наценок и навязанных услуг</p>
+        <div class="sec-head sec-head--center">
+            <span class="sec-index">03 — PRICING</span>
+            <h2 class="section-title" data-ru="Честные цены" data-kz="Адал бағалар">Честные цены</h2>
+            <p class="section-sub" data-ru="Без скрытых наценок и навязанных услуг" data-kz="Жасырын үстеме бағасыз және міндетті қызметтерсіз">Без скрытых наценок и навязанных услуг</p>
+        </div>
         <div class="prices__grid">
             <div class="price-card">
                 <h3 data-ru="Замена масла ДВС" data-kz="Қозғалтқыш майын ауыстыру">Замена масла ДВС</h3>
@@ -204,10 +231,13 @@
 </section>
 
 <!-- LOCATIONS -->
-<section class="locations" id="locations">
+<section class="locations section" id="locations">
     <div class="container">
-        <h2 class="section-title" data-ru="Наши филиалы" data-kz="Біздің филиалдар">Наши филиалы</h2>
-        <p class="section-sub" data-ru="Растём по всему Казахстану" data-kz="Бүкіл Қазақстан бойынша дамып келеміз">Растём по всему Казахстану</p>
+        <div class="sec-head sec-head--center">
+            <span class="sec-index">04 — NETWORK</span>
+            <h2 class="section-title" data-ru="Наши филиалы" data-kz="Біздің филиалдар">Наши филиалы</h2>
+            <p class="section-sub" data-ru="Растём по всему Казахстану" data-kz="Бүкіл Қазақстан бойынша дамып келеміз">Растём по всему Казахстану</p>
+        </div>
         <div class="locations__grid">
             <div class="location-card location-card--active">
                 <div class="location-card__status" data-ru="Работает" data-kz="Жұмыс істейді">Работает</div>
@@ -250,9 +280,12 @@
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
+<section class="contact section" id="contact">
     <div class="container">
-        <h2 class="section-title" data-ru="Свяжитесь с нами" data-kz="Бізбен байланысыңыз">Свяжитесь с нами</h2>
+        <div class="sec-head sec-head--center">
+            <span class="sec-index">05 — CONTACT</span>
+            <h2 class="section-title" data-ru="Свяжитесь с нами" data-kz="Бізбен байланысыңыз">Свяжитесь с нами</h2>
+        </div>
         <form class="contact__form" id="contactForm">
             <input type="text" name="name" required
                    placeholder="Ваше имя"
